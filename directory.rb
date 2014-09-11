@@ -1,13 +1,17 @@
-student_count = 9
-#first we print the list of students
+#put all the students into an array
+students = [
+"Sean Stevens",
+"Superman",
+"John",
+"James",
+"Marie"
+]
+#and then print them
 puts "The students of my cohort at MA"
-puts "------------"
-puts "Sean Stevens"
-puts "Superman"
-puts "John"
-puts "James"
-puts "Marie"
-#finally, we print the total
-print "Overall, we have "
-#it’s important that print() doesn’t add new line characters
-puts "Overall, we have #{student_count} great students"
+puts "----------------"
+students.each do |student|
+	puts student
+end
+
+#print total
+puts "Overall, we have #{students.length} great students"
