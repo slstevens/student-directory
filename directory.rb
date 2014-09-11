@@ -1,10 +1,10 @@
 #put all the students into an array
 students = [
-"Sean Stevens",
-"Superman",
-"John",
-"James",
-"Marie"
+{:name => "Sean Stevens", :cohort => :september},
+{:name => "Superman", :cohort => :september},
+{:name => "John", :cohort => :september},
+{:name => "James", :cohort => :september},
+{:name => "Marie", :cohort => :september},
 ]
 
 def print_header
@@ -12,13 +12,13 @@ def print_header
 	puts "----------------"
 end
 
-def print(names)
-	names.each do |name|
-		puts name
+def print(students)
+	students.each do |student|
+		puts "#{student[:name]} (#{student[:cohort]} cohort)}"
 	end
 end
 
-def print_footer(names)
+def print_footer(students)
 	puts "Overall, we have #{students.length} great students"
 end
 
